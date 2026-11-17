@@ -33,8 +33,7 @@ the columns contain the number of missing values for
 all columns in \code{data} except \code{group}.
 }
 \details{
-This function is
-a wrapper around the \code{group_by()} and
+This function is a wrapper around the \code{group_by()} and
 \code{summarize()} functions in the \code{dplyr} package.
 }
 \examples{

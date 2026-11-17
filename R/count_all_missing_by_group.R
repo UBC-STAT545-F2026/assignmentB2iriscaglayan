@@ -8,21 +8,20 @@
 #' the columns contain the number of missing values for
 #' all columns in `data` except `group`.
 #'
-#' @details This function is 
-#' a wrapper around the `group_by()` and
+#' @details This function is a wrapper around the `group_by()` and
 #' `summarize()` functions in the `dplyr` package.
 #' 
 #' @param data Data in data.frame or tibble format
 #' @param group_col Column in `data` to group by
 #' @param .groups (OPTIONAL) Controls whether the output data frame is grouped.
-#' By default, drops all levels of grouping (`"drop"`). 
-#' Specify `"keep"` to keep the output data frame grouped by
-#' `group`. See `summarize()` documentation in 
-#' `dplyr` for a full list of options.
+#'  By default, drops all levels of grouping (`"drop"`). 
+#'  Specify `"keep"` to keep the output data frame grouped by
+#'  `group`. See `summarize()` documentation in 
+#'  `dplyr` for a full list of options.
 #' 
 #' @return A data frame or tibble with the 
-#' levels of `group`, and the  number of NAs within 
-#' each level of `group` for all columns in
+#'  levels of `group`, and the  number of NAs within 
+#'  each level of `group` for all columns in
 #' `data` except `group`.
 #' 
 #' @examples
@@ -41,9 +40,7 @@
 #' # See example below; notice how the output is a grouped tibble,
 #' #rather than the ungrouped tibble output of the earlier examples.
 #' count_all_missing_by_group(airquality, Month, .groups = "keep")
-#' 
-
-
+#'
 #' @export
 count_all_missing_by_group <- function(data, group_col, .groups = "drop") { 
   
