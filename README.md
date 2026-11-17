@@ -5,7 +5,9 @@
 
 assignmentB2iriscaglayan counts missing values in every column except
 the grouping column, grouped by a specified column. It helps users
-summarize and compare missing data across groups. \## Installation
+summarize and compare missing data across groups.
+
+## Installation
 
 You can install version 0.1.0 of assignmentB2iriscaglayan from
 
@@ -21,7 +23,7 @@ devtools::install_github(
 
 ## Example
 
-Count missing values in the airquality dataset grouped by month
+Count missing values in the `airquality` dataset grouped by month
 
 ``` r
 library(assignmentB2iriscaglayan)

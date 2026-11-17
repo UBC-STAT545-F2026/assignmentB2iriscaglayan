@@ -7,7 +7,7 @@
 #' contains the levels of `group`, and the rest of 
 #' the columns contain the number of missing values for 
 #' all columns in `data` except `group`.  
-#' 
+#'
 #' @details This function is 
 #' a wrapper around the `group_by()` and 
 #' `summarize()` functions in the `dplyr` package. 
@@ -20,12 +20,12 @@
 #' `group`. See `summarize()` documentation in 
 #' `dplyr` for a full list of options.
 #' 
-#' #' @return A data frame or tibble with the 
+#' @return A data frame or tibble with the 
 #' levels of `group`, and the  number of NAs within 
 #' each level of `group` for all columns in
 #' `data` except `group`.
 #' 
-#' #'@examples
+#' @examples
 
 #' #This example computes the number of missing values in the `airquality` dataset grouped by the `cyl` column.
 #'count_all_missing_by_group(airquality, Month)
