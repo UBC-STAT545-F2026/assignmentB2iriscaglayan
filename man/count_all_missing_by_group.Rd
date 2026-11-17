@@ -14,23 +14,23 @@ count_all_missing_by_group(data, group_col, .groups = "drop")
 \item{.groups}{(OPTIONAL) Controls whether the output data frame is grouped.
 By default, drops all levels of grouping (\code{"drop"}).
 Specify \code{"keep"} to keep the output data frame grouped by
-\code{group}. See \code{summarize()} documentation in
+\code{group_col}. See \code{summarize()} documentation in
 \code{dplyr} for a full list of options.}
 }
 \value{
 A data frame or tibble with the
-levels of \code{group}, and the  number of NAs within
-each level of \code{group} for all columns in
-\code{data} except \code{group}.
+levels of \code{group_col}, and the  number of NAs within
+each level of \code{group_col} for all columns in
+\code{data} except \code{group_col}.
 }
 \description{
-Given a data frame \code{data} and a column \code{group},
+Given a data frame \code{data} and a column \code{group_col},
 \code{count_all_missing_by_group()} creates
-a new data frame with one row per level of \code{group}.
+a new data frame with one row per level of \code{group_col}.
 The first column of the output data frame
-contains the levels of \code{group}, and the rest of
+contains the levels of \code{group_col}, and the rest of
 the columns contain the number of missing values for
-all columns in \code{data} except \code{group}.
+all columns in \code{data} except \code{group_col}.
 }
 \details{
 This function is a wrapper around the \code{group_by()} and
