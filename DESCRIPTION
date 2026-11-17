@@ -1,0 +1,18 @@
+Package: assignmentB2iriscaglayan
+Title: Count missing values by group for all columns in a dataset
+Version: 0.0.0.9000
+Authors@R: 
+    person("Iris", "Caglayan", , "iriscaglayan@gmail.com", role = c("aut", "cre"))
+Description: Counts the number of missing values for all columns in a dataset, grouped by a given column.
+License: MIT + file LICENSE
+Config/roxygen2/version: 8.1.1
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+Suggests: 
+    datasets,
+    dbplyr,
+    testthat (>= 3.0.0),
+    tibble
+Imports: 
+    dplyr
+Config/testthat/edition: 3
