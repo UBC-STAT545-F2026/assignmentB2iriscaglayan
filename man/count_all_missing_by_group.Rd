@@ -37,3 +37,18 @@ This function is
 a wrapper around the \code{group_by()} and
 \code{summarize()} functions in the \code{dplyr} package.
 }
+\examples{
+#This example computes the number of missing values 
+#in the `airquality` dataset grouped by the `Month` column.
+count_all_missing_by_group(airquality, Month)
+#This example has the same output as the last example,
+#but shows off an alternative way of invoking the 
+#`count_all_missing_by_group()`: piping the dataset into the function. 
+airquality |> count_all_missing_by_group(Month)
+# The optional `.groups` argument allows us to keep 
+# the output grouped by the grouping column. 
+# See example below; notice how the output is a grouped tibble,
+#rather than the ungrouped tibble output of the earlier examples.
+count_all_missing_by_group(airquality, Month, .groups = "keep")
+
+}
