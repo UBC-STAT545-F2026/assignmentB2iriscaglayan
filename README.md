@@ -15,7 +15,7 @@ install.packages(“devtools”)
 
 ## Example
 
-Count missing values in the `airquality` dataset grouped by month
+Count missing values in the airquality dataset grouped by month
 
 ``` r
 library(assignmentB2iriscaglayan)
