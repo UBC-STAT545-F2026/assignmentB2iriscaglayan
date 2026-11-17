@@ -3,27 +3,19 @@
 
 # assignmentB2iriscaglayan
 
-<!-- badges: start -->
+assignmentB2iriscaglayan counts missing values in every column except
+the grouping column, grouped by a specified column. It helps users
+summarize and compare missing data across groups. \## Installation
 
-<!-- badges: end -->
+You can install version 0.1.0 of assignmentB2iriscaglayan from
+install.packages(“devtools”)
 
-The goal of assignmentB2iriscaglayan is to count the number of missing
-values for all columns in a dataset grouped by a specified column.
-
-## Installation
-
-You can install the development version of assignmentB2 from
 [GitHub](https://github.com/) with: devtools::install_github(
 “UBC-STAT545-F2026/assignmentB2iriscaglayan”, ref = “0.1.0” )
 
-``` r
-# install.packages("pak")
-pak::pak("UBC-STAT545-F2026/assignmentB2iriscaglayan")
-```
-
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+Count missing values in the `airquality` dataset grouped by month
 
 ``` r
 library(assignmentB2iriscaglayan)

@@ -1,7 +1,7 @@
-#' @title Count missing values for all columns by group
+#' @title A function to count missing values for all columns by group
 #' @description 
-#' Given a data frame `data` and a 
-#' column `group`, `count_all_missing_by_group()` creates
+#' Given a data frame `data` and a column `group`, 
+#' `count_all_missing_by_group()` creates
 #' a new data frame with one row per level of `group`.
 #' The first column of the output data frame 
 #' contains the levels of `group`, and the rest of 
