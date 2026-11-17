@@ -2,7 +2,7 @@
 % Please edit documentation in R/count_all_missing_by_group.R
 \name{count_all_missing_by_group}
 \alias{count_all_missing_by_group}
-\title{Count missing values for all columns by group}
+\title{A function to count missing values for all columns by group}
 \usage{
 count_all_missing_by_group(data, group_col, .groups = "drop")
 }
@@ -24,8 +24,8 @@ each level of \code{group} for all columns in
 \code{data} except \code{group}.
 }
 \description{
-Given a data frame \code{data} and a
-column \code{group}, \code{count_all_missing_by_group()} creates
+Given a data frame \code{data} and a column \code{group},
+\code{count_all_missing_by_group()} creates
 a new data frame with one row per level of \code{group}.
 The first column of the output data frame
 contains the levels of \code{group}, and the rest of

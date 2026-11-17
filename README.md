@@ -8,10 +8,16 @@ the grouping column, grouped by a specified column. It helps users
 summarize and compare missing data across groups. \## Installation
 
 You can install version 0.1.0 of assignmentB2iriscaglayan from
-install.packages(“devtools”)
 
-[GitHub](https://github.com/) with: devtools::install_github(
-“UBC-STAT545-F2026/assignmentB2iriscaglayan”, ref = “0.1.0” )
+``` r
+# Install if needed:
+# install.packages("devtools")
+
+devtools::install_github(
+  "UBC-STAT545-F2026/assignmentB2iriscaglayan",
+  ref = "0.1.0"
+)
+```
 
 ## Example
 
